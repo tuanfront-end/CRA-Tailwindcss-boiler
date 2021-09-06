@@ -1,0 +1,67 @@
+// SAFE CLASS -- BECAUSE TAILWIND JIT CURRENT NOT SUPPORT YET
+
+// ========= GRID COLs ==========================================================================================
+$cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+@each $col in $cols {
+  .grid-cols-#{$col} {
+    @apply grid-cols-#{$col};
+  }
+  @screen sm {
+    .sm\:grid-cols-#{$col} {
+      @apply sm:grid-cols-#{$col};
+    }
+  }
+  @screen md {
+    .md\:grid-cols-#{$col} {
+      @apply md:grid-cols-#{$col};
+    }
+  }
+  @screen lg {
+    .lg\:grid-cols-#{$col} {
+      @apply lg:grid-cols-#{$col};
+    }
+  }
+  @screen xl {
+    .xl\:grid-cols-#{$col} {
+      @apply xl:grid-cols-#{$col};
+    }
+  }
+  @screen 2xl {
+    .2xl\:grid-cols-#{$col} {
+      @apply 2xl:grid-cols-#{$col};
+    }
+  }
+}
+
+// ========= GAP ==========================================================================================
+$gaps: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14;
+@each $gap in $gaps {
+  .gap-#{$gap} {
+    @apply gap-#{$gap};
+  }
+  @screen sm {
+    .sm\:gap-#{$gap} {
+      @apply sm:gap-#{$gap};
+    }
+  }
+  @screen md {
+    .md\:gap-#{$gap} {
+      @apply md:gap-#{$gap};
+    }
+  }
+  @screen lg {
+    .lg\:gap-#{$gap} {
+      @apply lg:gap-#{$gap};
+    }
+  }
+  @screen xl {
+    .xl\:gap-#{$gap} {
+      @apply xl:gap-#{$gap};
+    }
+  }
+  @screen 2xl {
+    .2xl\:gap-#{$gap} {
+      @apply 2xl:gap-#{$gap};
+    }
+  }
+}
